@@ -6,7 +6,7 @@
   - Relationship: an event has many performers
   - For example, the test data:
     - Event name: `Blue Jays vs Chicago Cubs`
-    -Performers:
+    - Performers:
         - `Blue Jays`
         - `Chicago Cubs`
 
