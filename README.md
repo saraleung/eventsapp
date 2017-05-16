@@ -1,14 +1,14 @@
-h2. Description
+## Description
 
 - Database: create the following tables
   - Performer table with a name column
   - Event table that has a name column, datetime column
   - Relationship: an event has many performers
   - For example, the test data:
-    Event name: Blue Jays vs Chicago Cubs
-    Performers:
-    - Blue Jays
-    - Chicago Cubs
+    - Event name: `Blue Jays vs Chicago Cubs`
+    -Performers:
+        - `Blue Jays`
+        - `Chicago Cubs`
 
 - Website:
   - Using a technology of your choice
