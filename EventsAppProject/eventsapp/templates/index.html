@@ -2,9 +2,8 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-<!--		<link rel="stylesheet" href="css/style.css">
-		<link href="images/favicon.ico" rel="shortcut icon">
--->
+		{% load static %}
+		<link rel="stylesheet" href="{% static 'eventsapp/style.css' %}">
 		<title>EventsApp</title>
 	</head>
 
@@ -21,11 +20,15 @@
 				</thead>
 				<tbody>
 					{% for event in events %}
-					<tr>
-						<th>{{ event.datetime }}</th>
-						<th>{{ event.name }}</th>
-						<th>{% for performer in performers %} {{ performer.name }}, {% endfor %}</th>
-					</tr>
+						<tr>
+							<th>{{ event.datetime }}</th>
+							<th>{{ event.name }}</th>
+							<th>
+								{% for performer in performers %} 
+									{{ performer.name }}, 
+								{% endfor %}
+							</th>
+						</tr>
 					{% endfor %}
 				</tbody>
 			</table>
