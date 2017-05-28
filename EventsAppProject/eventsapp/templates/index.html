@@ -25,7 +25,9 @@
 							<th>{{ event.name }}</th>
 							<th>
 								{% for performer in performers %} 
-									{{ performer.name }}, 
+									{% if performer.event_id == event.id %} 
+										{{ performer.name }}, 
+									{% endif %}
 								{% endfor %}
 							</th>
 						</tr>
