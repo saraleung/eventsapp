@@ -80,9 +80,9 @@ WSGI_APPLICATION = 'eventsapp.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'eventapp',
-        'USER': 'root',
+        'USER': 'postgres',
         'PASSWORD': 'saraleung',
         'HOST': '',
         'PORT': '',
