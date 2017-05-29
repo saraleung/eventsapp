@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		{% load static %}
+		<link rel="stylesheet" href="{% static 'firstevent/style.css' %}">
+		<title>EventsApp</title>
+	</head>
+
+	<body>
+		<div class="container">
+			<h1>Upcoming Events</h1>
+			<table>
+				<thead>
+					<tr> 
+						<th>Date</th>
+						<th>Event</th>
+						<th>Performers</th>
+					</tr>
+				</thead>
+				<tbody>
+					{% for event in events %}
+						<tr>
+							<th>{{ event.datetime }}</th>
+							<th>{{ event.name }}</th>
+							<th>
+								{% for performer in performers %} 
+									{% if performer.event_id == event.id %} 
+										{{ performer.name }}, 
+									{% endif %}
+								{% endfor %}
+							</th>
+						</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+			
+		</div>
+	</body>
+</html>

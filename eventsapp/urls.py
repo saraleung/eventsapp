@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from firstevent import views as firstevent_views
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
+    url(r'^$', firstevent_views.home, name='home'),
+    #url(r'^admin/', admin.site.urls),
 ]
