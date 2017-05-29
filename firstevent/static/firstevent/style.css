@@ -1,32 +1,19 @@
 h1 {
-<<<<<<< HEAD
 	font-family: Arial;
 }
 body {
 	width: 90%;
 	margin: 0 auto;
 }
-
 table {
 	width: 80%;
-=======
-	font-family: Georigia, Times, serif;
+	font-family: Arial;
 }
-
-table {
-	width: 800px;
->>>>>>> 82fbf52c120ec5d8a7e1ff05be2f8814a7477275
-}
-
 th, td { 
 	padding: 7px 10px 10px 10px;
 }
 
 th {
-<<<<<<< HEAD
-	font-family: Arial;
-=======
->>>>>>> 82fbf52c120ec5d8a7e1ff05be2f8814a7477275
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 	font-size: 90%;
@@ -35,7 +22,7 @@ th {
 	text-align: left;
 }
 
-tr.eve {
+tr.even {
 	background-color: #efefef;
 }
 

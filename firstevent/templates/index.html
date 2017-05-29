@@ -25,13 +25,8 @@
 							<th>{{ event.name }}</th>
 							<th>
 								{% for performer in performers %} 
-<<<<<<< HEAD
 									{% if performer.event_id == event.id %}
 										{{ performer.name }} 
-=======
-									{% if performer.event_id == event.id %} 
-										{{ performer.name }}, 
->>>>>>> 82fbf52c120ec5d8a7e1ff05be2f8814a7477275
 									{% endif %}
 								{% endfor %}
 							</th>
