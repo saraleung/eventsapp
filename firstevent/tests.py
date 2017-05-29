@@ -1,4 +1,5 @@
 from django.test import TestCase
+<<<<<<< HEAD
 from firstevent.models import Event, Performer
 
 class TestEvent(TestCase):
@@ -19,3 +20,7 @@ class TestPerformer(TestCase):
 	def test_performer_added(self):
 		newPerformer = Performer.objects.get(name="Weeknd")
 		self.assertEqual(newPerformer.name, 'Weeknd')
+=======
+
+# Create your tests here.
+>>>>>>> 82fbf52c120ec5d8a7e1ff05be2f8814a7477275
